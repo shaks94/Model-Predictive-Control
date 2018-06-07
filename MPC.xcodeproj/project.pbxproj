@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		10ABDC9071B049C1B23DEA36 /* ALL_BUILD */ = {
+		3D5D9A8C418543C595A7AD22 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = D3993E021FD8409E9AACF906 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = DEB1DC5B24F04EEBB692A9C8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				056E4AE4B5EA4368A0A0BA9C /* CMake Rules */,
+				506716ED58A941C5A401391E /* CMake Rules */,
 			);
 			dependencies = (
-				C15E62D7A30F4248A26AAA64 /* PBXTargetDependency */,
-				7D362E0B038E4D53BEF7D9CC /* PBXTargetDependency */,
+				E0499F542D7F48129C54EB00 /* PBXTargetDependency */,
+				6494E1F0054146A8B2F2BB4F /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
-		99C854F4E7444C1CB218A9F4 /* ZERO_CHECK */ = {
+		F9522A830CCD441DAA5A8A85 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = BB9348D5BB8C4E4393326ADF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = C4EF8C4A7C454AD1A6B41CF9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				1E72BBC9CB984323931CB4A6 /* CMake Rules */,
+				895263E531BD4F699FE17349 /* CMake Rules */,
 			);
 			dependencies = (
 			);
@@ -34,34 +34,34 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0120B50F564740D1BF2980AD /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/main.cpp */ = {isa = PBXBuildFile; fileRef = F0E27BFB27154D019404A3FD /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/main.cpp */; };
-		1ADA3D7DCEDD4BE4B8EC5DB7 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/MPC.cpp */ = {isa = PBXBuildFile; fileRef = CD8C26A978394188A583BEE7 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/MPC.cpp */; };
-		C53B712FDD464E0BBB2A4469 /* /Users/admin/Documents/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 61B2B47029D0404F92420F98 /* /Users/admin/Documents/CMakeLists.txt */; };
+		8171D233F98A4DD4A0CEAFDF /* /Users/admin/Documents/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 3AF907315DEF46C0B8F680E8 /* /Users/admin/Documents/CMakeLists.txt */; };
+		EB59B2B432F64CF98D93E2C1 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/main.cpp */ = {isa = PBXBuildFile; fileRef = BE6D545940F04830AD8835F0 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/main.cpp */; };
+		F353B33388A04F56A8C6D093 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/MPC.cpp */ = {isa = PBXBuildFile; fileRef = FC3950A5873544B8AC888A20 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/MPC.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		4F0E9F4973F54CFA9FB86611 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		531A73D1EB09473499BD69DA /* RelWithDebInfo */ = {
+		55C55925F0AC4674B93B5A97 /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = RelWithDebInfo;
 		};
-		5EE19EAF185D4EBEA2A450FE /* MinSizeRel */ = {
+		8505FA6EEE3E4E27A572A5B0 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		A27D15D402BD42DE93205ED3 /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
-		6F00BC18B7EE4975A05FBF44 /* Debug */ = {
+		E8E511BE48A646EDB5AA8197 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -71,141 +71,152 @@
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		B86671E1DD92489996706D27 /* PBXContainerItemProxy */ = {
+		72ABD8BB1BC44266AAF80CEA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5AC465E003074DA4A438E13F /* Project object */;
+			containerPortal = B94DE90897CF4A52B1A98ACA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F2FC5DDBE6C74FAB944DC744;
+			remoteGlobalIDString = F9522A830CCD441DAA5A8A85;
+			remoteInfo = ZERO_CHECK;
+		};
+		AF3E2E03EE2E46E0A1FC9AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B94DE90897CF4A52B1A98ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9522A830CCD441DAA5A8A85;
+			remoteInfo = ZERO_CHECK;
+		};
+		D4706D28988F4C069B0BE773 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B94DE90897CF4A52B1A98ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1BF1EF02C3545409D467F86;
 			remoteInfo = mpc;
-		};
-		BEA92268EB54400DADCAFB88 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5AC465E003074DA4A438E13F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 99C854F4E7444C1CB218A9F4;
-			remoteInfo = ZERO_CHECK;
-		};
-		FF74954148CF4962886374B5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5AC465E003074DA4A438E13F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 99C854F4E7444C1CB218A9F4;
-			remoteInfo = ZERO_CHECK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		61B2B47029D0404F92420F98 /* /Users/admin/Documents/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		A2D2D903B390486FBF57C6BB /* mpc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = mpc; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD8C26A978394188A583BEE7 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/MPC.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MPC.cpp; path = "UdacityTerm2/CarND-MPC-Project/src/MPC.cpp"; sourceTree = SOURCE_ROOT; };
-		F0E27BFB27154D019404A3FD /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = "UdacityTerm2/CarND-MPC-Project/src/main.cpp"; sourceTree = SOURCE_ROOT; };
-		F84E725C89AE40269BD3A65F /* /Users/admin/Documents/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3AF907315DEF46C0B8F680E8 /* /Users/admin/Documents/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		540D17C301014E0B97ED76C4 /* mpc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = mpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		562E2B57387A4D74B6CFF3D1 /* /Users/admin/Documents/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BE6D545940F04830AD8835F0 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = "UdacityTerm2/CarND-MPC-Project/src/main.cpp"; sourceTree = SOURCE_ROOT; };
+		FC3950A5873544B8AC888A20 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/MPC.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MPC.cpp; path = "UdacityTerm2/CarND-MPC-Project/src/MPC.cpp"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		329B0DEA68F741B5A8A70949 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A2D2D903B390486FBF57C6BB /* mpc */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		552AD2BC18324450AF082D1F = {
-			isa = PBXGroup;
-			children = (
-				7FA0C078A0644F188C351960 /* mpc */,
-				DF5CAA406574448385618AE5 /* ALL_BUILD */,
-				329B0DEA68F741B5A8A70949 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		64B493D1DB73402E91D434B7 /* CMake Rules */ = {
+		313237A86A804E26A0BEA3F3 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		7F23C1750FFC48099DD1EE58 /* Source Files */ = {
+		80D0A16AE05D41AAAF733CD2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD8C26A978394188A583BEE7 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/MPC.cpp */,
-				F0E27BFB27154D019404A3FD /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/main.cpp */,
+				540D17C301014E0B97ED76C4 /* mpc */,
 			);
-			name = "Source Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		7FA0C078A0644F188C351960 /* mpc */ = {
+		8B1EEA854CBB4BB4A6168DCE /* mpc */ = {
 			isa = PBXGroup;
 			children = (
-				7F23C1750FFC48099DD1EE58 /* Source Files */,
-				61B2B47029D0404F92420F98 /* /Users/admin/Documents/CMakeLists.txt */,
+				CC38D853053B432D9BDEA0BA /* Source Files */,
+				3AF907315DEF46C0B8F680E8 /* /Users/admin/Documents/CMakeLists.txt */,
 			);
 			name = mpc;
 			sourceTree = "<group>";
 		};
-		DF5CAA406574448385618AE5 /* ALL_BUILD */ = {
+		8BE7DEDB91344741A886618D /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				64B493D1DB73402E91D434B7 /* CMake Rules */,
-				F84E725C89AE40269BD3A65F /* /Users/admin/Documents/CMakeLists.txt */,
+				313237A86A804E26A0BEA3F3 /* CMake Rules */,
+				562E2B57387A4D74B6CFF3D1 /* /Users/admin/Documents/CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		CC38D853053B432D9BDEA0BA /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC3950A5873544B8AC888A20 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/MPC.cpp */,
+				BE6D545940F04830AD8835F0 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F99B69764F084E8EB1255DE4 = {
+			isa = PBXGroup;
+			children = (
+				8B1EEA854CBB4BB4A6168DCE /* mpc */,
+				8BE7DEDB91344741A886618D /* ALL_BUILD */,
+				80D0A16AE05D41AAAF733CD2 /* Products */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F2FC5DDBE6C74FAB944DC744 /* mpc */ = {
+		B1BF1EF02C3545409D467F86 /* mpc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AE9C2ECA65747A38EC5D503 /* Build configuration list for PBXNativeTarget "mpc" */;
+			buildConfigurationList = BE7407262B8149F5A46CD8A8 /* Build configuration list for PBXNativeTarget "mpc" */;
 			buildPhases = (
-				A7FCC1A801354206BF414DDA /* Sources */,
+				B39907080DAC405ABAB0A6A6 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7FE1EADAFC214C12A231FA2A /* PBXTargetDependency */,
+				7A582B34B14C4D198753105C /* PBXTargetDependency */,
 			);
 			name = mpc;
 			productName = mpc;
-			productReference = A2D2D903B390486FBF57C6BB /* mpc */;
+			productReference = 540D17C301014E0B97ED76C4 /* mpc */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5AC465E003074DA4A438E13F /* Project object */ = {
+		B94DE90897CF4A52B1A98ACA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 0940;
 			};
-			buildConfigurationList = 755F603042A34B84A97A3B46 /* Build configuration list for PBXProject "MPC" */;
+			buildConfigurationList = 5C2ECCC425DE4FDCB1E3E461 /* Build configuration list for PBXProject "MPC" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				6F00BC18B7EE4975A05FBF44 /* Debug */,
-				4F0E9F4973F54CFA9FB86611 /* Release */,
-				5EE19EAF185D4EBEA2A450FE /* MinSizeRel */,
-				531A73D1EB09473499BD69DA /* RelWithDebInfo */,
+				E8E511BE48A646EDB5AA8197 /* Debug */,
+				8505FA6EEE3E4E27A572A5B0 /* Release */,
+				A27D15D402BD42DE93205ED3 /* MinSizeRel */,
+				55C55925F0AC4674B93B5A97 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 552AD2BC18324450AF082D1F;
+			mainGroup = F99B69764F084E8EB1255DE4;
 			projectDirPath = ../../;
 			projectRoot = "";
 			targets = (
-				10ABDC9071B049C1B23DEA36 /* ALL_BUILD */,
-				99C854F4E7444C1CB218A9F4 /* ZERO_CHECK */,
-				F2FC5DDBE6C74FAB944DC744 /* mpc */,
+				3D5D9A8C418543C595A7AD22 /* ALL_BUILD */,
+				F9522A830CCD441DAA5A8A85 /* ZERO_CHECK */,
+				B1BF1EF02C3545409D467F86 /* mpc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		018E4DE564014694AF5D4A10 = {
+		506716ED58A941C5A401391E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project -f /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		637072B4B474462B92F94E92 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -220,18 +231,7 @@
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		056E4AE4B5EA4368A0A0BA9C /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project -f /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
-			showEnvVarsInLog = 0;
-		};
-		1E72BBC9CB984323931CB4A6 /* CMake Rules */ = {
+		895263E531BD4F699FE17349 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -242,7 +242,7 @@ exit 0";
 			shellScript = "make -C /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project -f /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		FA30054838C94294BB4222A4 = {
+		C37BC6BA31084917ACA7EAAD = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,244 +260,37 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A7FCC1A801354206BF414DDA /* Sources */ = {
+		B39907080DAC405ABAB0A6A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ADA3D7DCEDD4BE4B8EC5DB7 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/MPC.cpp */,
-				0120B50F564740D1BF2980AD /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/main.cpp */,
+				F353B33388A04F56A8C6D093 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/MPC.cpp */,
+				EB59B2B432F64CF98D93E2C1 /* /Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/src/main.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7D362E0B038E4D53BEF7D9CC /* PBXTargetDependency */ = {
+		6494E1F0054146A8B2F2BB4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 99C854F4E7444C1CB218A9F4 /* ZERO_CHECK */;
-			targetProxy = FF74954148CF4962886374B5 /* PBXContainerItemProxy */;
+			target = F9522A830CCD441DAA5A8A85 /* ZERO_CHECK */;
+			targetProxy = 72ABD8BB1BC44266AAF80CEA /* PBXContainerItemProxy */;
 		};
-		7FE1EADAFC214C12A231FA2A /* PBXTargetDependency */ = {
+		7A582B34B14C4D198753105C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 99C854F4E7444C1CB218A9F4 /* ZERO_CHECK */;
-			targetProxy = BEA92268EB54400DADCAFB88 /* PBXContainerItemProxy */;
+			target = F9522A830CCD441DAA5A8A85 /* ZERO_CHECK */;
+			targetProxy = AF3E2E03EE2E46E0A1FC9AD5 /* PBXContainerItemProxy */;
 		};
-		C15E62D7A30F4248A26AAA64 /* PBXTargetDependency */ = {
+		E0499F542D7F48129C54EB00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F2FC5DDBE6C74FAB944DC744 /* mpc */;
-			targetProxy = B86671E1DD92489996706D27 /* PBXContainerItemProxy */;
+			target = B1BF1EF02C3545409D467F86 /* mpc */;
+			targetProxy = D4706D28988F4C069B0BE773 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1DA50F283C624237B873CCB2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		3129781826AA4E88A01AE24D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		59D9635F62D642B08340058B /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/admin/Documents/src/Eigen-3.3",/usr/local/opt/openssl/include);
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib";
-				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1*/lib";
-				OTHER_CPLUSPLUSFLAGS = "-Wall     -DNDEBUG   -std=c++11 -O3";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lipopt -lz -lssl -luv -luWS";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = mpc;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		5F3A257467EE462C98E0004C /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/admin/Documents/src/Eigen-3.3",/usr/local/opt/openssl/include);
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib";
-				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1*/lib";
-				OTHER_CPLUSPLUSFLAGS = "-Wall        -DNDEBUG   -std=c++11 -O3";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lipopt -lz -lssl -luv -luWS";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = mpc;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		6F73D71370BB4A40A50D9794 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/build";
-			};
-			name = RelWithDebInfo;
-		};
-		757DCB9F160C4C398E76DA11 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/admin/Documents/src/Eigen-3.3",/usr/local/opt/openssl/include);
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib";
-				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1*/lib";
-				OTHER_CPLUSPLUSFLAGS = "-Wall      -std=c++11 -O3";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lipopt -lz -lssl -luv -luWS";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = mpc;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		91282D04BEFD49BDB91910BF /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		966B13B4B0B048B195FD4598 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Debug;
-		};
-		9D08F8CBDDF24B7A870AD2B5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = Release;
-		};
-		A2DF53B4DAC54EF5BA077925 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		BAB78DF520EE471C90DF7ABC /* Release */ = {
+		027F2B681DB54709BB22FCD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -523,25 +316,36 @@ exit 0";
 			};
 			name = Release;
 		};
-		C158E550764049DC95A7524B /* Debug */ = {
+		0A4661529E524F2F9852DA3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/build";
-			};
-			name = Debug;
-		};
-		C5B48B09F9E147AB9F3267B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/build";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
 			};
 			name = Release;
 		};
-		C651789E5B54428AB062F285 /* MinSizeRel */ = {
+		1132518149F54574B3C8EF3F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/build";
+			};
+			name = MinSizeRel;
+		};
+		1D31E8952BBF4330907D9C5B /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -561,7 +365,212 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		CB513D23D07B4BA590BE389D /* RelWithDebInfo */ = {
+		2327EBF2C6C446E98E66349E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/build";
+			};
+			name = Debug;
+		};
+		234C5201E41444F8B0BB0922 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4657535E1CD647C1BE0EADDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5437722CC708489A84369C92 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/admin/Documents/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib";
+				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1*/lib";
+				OTHER_CPLUSPLUSFLAGS = "-Wall        -DNDEBUG   -std=c++11 -O3";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lipopt -lz -lssl -luv -luWS";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mpc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5452FF53821544D4823D0A95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5DC44B99554E4529822D6831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		6406C7975B1244B79CF60CE9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/build";
+			};
+			name = RelWithDebInfo;
+		};
+		69F34858EBC44C728C37A803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/build";
+			};
+			name = Release;
+		};
+		7A4E3F7752C3487DABE1FBBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/admin/Documents/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib";
+				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1*/lib";
+				OTHER_CPLUSPLUSFLAGS = "-Wall      -std=c++11 -O3";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lipopt -lz -lssl -luv -luWS";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mpc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		D0011B4028164A8A890FC7AE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D7B242327BD94338AE21BAB8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/admin/Documents/src/Eigen-3.3",/usr/local/opt/openssl/include);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib";
+				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /usr/local/opt/openssl/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/opt/openssl/lib /usr/local/Cellar/libuv/1*/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/Cellar/libuv/1*/lib";
+				OTHER_CPLUSPLUSFLAGS = "-Wall     -DNDEBUG   -std=c++11 -O3";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lipopt -lz -lssl -luv -luWS";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mpc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E7BEDAA411354C7E9C7387A3 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -581,63 +590,54 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		D201CB74AD4B44ECAE7BB050 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = "/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/build";
-			};
-			name = MinSizeRel;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4AE9C2ECA65747A38EC5D503 /* Build configuration list for PBXNativeTarget "mpc" */ = {
+		5C2ECCC425DE4FDCB1E3E461 /* Build configuration list for PBXProject "MPC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				757DCB9F160C4C398E76DA11 /* Debug */,
-				BAB78DF520EE471C90DF7ABC /* Release */,
-				59D9635F62D642B08340058B /* MinSizeRel */,
-				5F3A257467EE462C98E0004C /* RelWithDebInfo */,
+				2327EBF2C6C446E98E66349E /* Debug */,
+				69F34858EBC44C728C37A803 /* Release */,
+				1132518149F54574B3C8EF3F /* MinSizeRel */,
+				6406C7975B1244B79CF60CE9 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		755F603042A34B84A97A3B46 /* Build configuration list for PBXProject "MPC" */ = {
+		BE7407262B8149F5A46CD8A8 /* Build configuration list for PBXNativeTarget "mpc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C158E550764049DC95A7524B /* Debug */,
-				C5B48B09F9E147AB9F3267B3 /* Release */,
-				D201CB74AD4B44ECAE7BB050 /* MinSizeRel */,
-				6F73D71370BB4A40A50D9794 /* RelWithDebInfo */,
+				7A4E3F7752C3487DABE1FBBD /* Debug */,
+				027F2B681DB54709BB22FCD4 /* Release */,
+				D7B242327BD94338AE21BAB8 /* MinSizeRel */,
+				5437722CC708489A84369C92 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		BB9348D5BB8C4E4393326ADF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		C4EF8C4A7C454AD1A6B41CF9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				966B13B4B0B048B195FD4598 /* Debug */,
-				9D08F8CBDDF24B7A870AD2B5 /* Release */,
-				C651789E5B54428AB062F285 /* MinSizeRel */,
-				CB513D23D07B4BA590BE389D /* RelWithDebInfo */,
+				4657535E1CD647C1BE0EADDE /* Debug */,
+				5DC44B99554E4529822D6831 /* Release */,
+				1D31E8952BBF4330907D9C5B /* MinSizeRel */,
+				E7BEDAA411354C7E9C7387A3 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D3993E021FD8409E9AACF906 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		DEB1DC5B24F04EEBB692A9C8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3129781826AA4E88A01AE24D /* Debug */,
-				1DA50F283C624237B873CCB2 /* Release */,
-				91282D04BEFD49BDB91910BF /* MinSizeRel */,
-				A2DF53B4DAC54EF5BA077925 /* RelWithDebInfo */,
+				5452FF53821544D4823D0A95 /* Debug */,
+				0A4661529E524F2F9852DA3D /* Release */,
+				D0011B4028164A8A890FC7AE /* MinSizeRel */,
+				234C5201E41444F8B0BB0922 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5AC465E003074DA4A438E13F /* Project object */;
+	rootObject = B94DE90897CF4A52B1A98ACA /* Project object */;
 }
