@@ -1,3 +1,0 @@
-/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/CMakeFiles/mpc.dir
-/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/CMakeFiles/ALL_BUILD.dir
-/Users/admin/Documents/UdacityTerm2/CarND-MPC-Project/CMakeFiles/ZERO_CHECK.dir
