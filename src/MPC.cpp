@@ -66,9 +66,9 @@ class FG_eval {
       }
       // Minimize the value gap between sequential actuations.
 
-      for(int i =0;i<N ;i++){
-          fg[0] += CppAD::pow(vars[delta_start + i + 1] - vars[delta_start + i], 2);
-          fg[0] += CppAD::pow(vars[a_start + i + 1] - vars[a_start + i], 2);
+      for(int i =0;i<N-2 ;i++){
+          fg[0] += 200*CppAD::pow(vars[delta_start + i + 1] - vars[delta_start + i], 2);
+          fg[0] += 10*CppAD::pow(vars[a_start + i + 1] - vars[a_start + i], 2);
       }
       // Initial constraints
       //
@@ -106,7 +106,7 @@ class FG_eval {
           // calculation of the polynomial value
           AD<double> f0 = coeffs[0] + coeffs[1] * x0 + coeffs[2] * CppAD::pow(x0,2) + coeffs[3] * CppAD::pow(x0,3);
           //desired psi
-          AD<double> psides0 = CppAD::atan(coeffs[1]+ 2 * coeffs[2] * x0 + x0 * x0 * 3 * coeffs[3] );
+          AD<double> psides0 = CppAD::atan(coeffs[1]+ 2 * coeffs[2] *  x0 + CppAD::pow(x0,2) * 3 * coeffs[3] );
           
           // Here's `x` to get you started.
           // The idea here is to constraint this value to be 0.
@@ -127,8 +127,8 @@ class FG_eval {
           fg[2 + v_start + t] = v1 - (v0 + a0 * dt);
           fg[2 + cte_start + t] =
           cte1 - ((f0 - y0) + (v0 * CppAD::sin(epsi0) * dt));
-          fg[1 + epsi_start + t] =
-          epsi1 - ((psi0 - psides0) + v0 * delta0 / Lf * dt);
+          fg[2 + epsi_start + t] =
+          epsi1 - ((psi0 - psides0) - v0 * delta0 / Lf * dt);
       }
     
     // TODO: implement MPC
@@ -161,7 +161,7 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs) {
     double cte = state[4];
     double epsi = state[5];
     
-    
+  //delta and accelration
   size_t n_vars = N * 6 + (N-1)*2;
   // TODO: Set the number of constraints
   size_t n_constraints = N*6;
@@ -176,6 +176,7 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs) {
   Dvector vars_lowerbound(n_vars);
   Dvector vars_upperbound(n_vars);
   // TODO: Set lower and upper limits for variables.
+    
     for (int i = 0; i < delta_start; i++) {
         vars_lowerbound[i] = -1.0e19;
         vars_upperbound[i] = 1.0e19;
@@ -232,7 +233,7 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs) {
   options += "Sparse  true        reverse\n";
   // NOTE: Currently the solver has a maximum time limit of 0.5 seconds.
   // Change this as you see fit.
-  options += "Numeric max_cpu_time          50.5\n";
+  options += "Numeric max_cpu_time          75.5\n";
 
   // place to return solution
   CppAD::ipopt::solve_result<Dvector> solution;
