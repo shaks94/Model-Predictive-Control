@@ -91,6 +91,8 @@ int main() {
           double py = j[1]["y"];
           double psi = j[1]["psi"];
           double v = j[1]["speed"];
+          vector<double> waypointsX;
+          vector<double> waypointsY;
 
           /*
           * TODO: Calculate steering angle and throttle using MPC.
@@ -98,8 +100,55 @@ int main() {
           * Both are in between [-1, 1].
           *
           */
-          double steer_value;
-          double throttle_value;
+          // shifting car reference angle to 90 degree
+            
+            for(int i=0; i<ptsx.size();i++){
+                double shiftX = ptsx[i]-px;
+                double shiftY = ptsy[i]-py;
+                waypointsX.push_back(shiftX * cos(0-psi) + shiftY*sin(0-psi));
+                waypointsY.push_back(shiftX * sin(0-psi) + shiftY*cos(0-psi));
+            }
+            
+            double* ptrx = &waypointsX[0];
+            double* ptry = &waypointsY[0];
+            Eigen::Map<Eigen::VectorXd> waypoints_x_transofrm(ptrx, 6);
+            Eigen::Map<Eigen::VectorXd> waypoints_y_transform(ptry, 6);
+            
+            auto coeffs = polyfit(waypoints_x_transofrm, waypoints_y_transform, 3);
+            double cte = polyeval(coeffs,0);
+            double epsi = -atan(coeffs[1]);
+            
+            
+          double steer_value = j[1]["steering_angle"];
+          double throttle_value;j[1]["steering_angle"];
+            
+            Eigen::VectorXd state(6);
+            state << 0, 0, 0, v, cte, epsi;
+            auto vars = mpc.Solve(state, coeffs);
+            steer_value = vars[0];
+            throttle_value = vars[1];
+            
+            double poly_inc = 2.5;
+            int num_points = 25;
+            vector<double> next_x;
+            vector<double> next_y;
+            for(int i = 0 ; i<num_points; i++){
+                next_x.push_back(poly_inc * i);
+                next_y.push_back(polyeval(coeffs, poly_inc * i));
+            }
+            
+            vector<double> mpc_x_vals;
+            vector<double> mpc_y_vals;
+            
+            for (int i = 2; i< vars.size();i++){
+                if(i%2 == 0){
+                    mpc_x_vals.push_back(vars[i]);
+                }else{
+                    mpc_y_vals.push_back(vars[i]);
+
+                }
+            }
+            double Lf = 2.67;
 
           json msgJson;
           // NOTE: Remember to divide by deg2rad(25) before you send the steering value back.
@@ -108,8 +157,8 @@ int main() {
           msgJson["throttle"] = throttle_value;
 
           //Display the MPC predicted trajectory 
-          vector<double> mpc_x_vals;
-          vector<double> mpc_y_vals;
+//          vector<double> mpc_x_vals;
+//          vector<double> mpc_y_vals;
 
           //.. add (x,y) points to list here, points are in reference to the vehicle's coordinate system
           // the points in the simulator are connected by a Green line
