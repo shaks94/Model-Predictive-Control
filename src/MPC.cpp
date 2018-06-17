@@ -25,7 +25,7 @@ const double Lf = 2.67;
 double ref_cte = 0;
 double ref_epsi = 0;
 // The reference velocity is set to 60mph can play with different values.
-double ref_v = 88;
+double ref_v = 80;
 
 // The solver takes all the state variables and actuator variables in a single vector.
 // We can save the starting points for each variable to make calculations easier.
@@ -55,22 +55,22 @@ public:
         
         // The part of the cost based on the reference state.
         for (t = 0; t < N; ++t) {
-            fg[0] += 1500*CppAD::pow(vars[cte_start + t] - ref_cte, 2); // can be tuned better
+            fg[0] += 2000*CppAD::pow(vars[cte_start + t] - ref_cte, 2); // can be tuned better
             fg[0] += 1500*CppAD::pow(vars[epsi_start + t] - ref_epsi, 2);
             fg[0] += CppAD::pow(vars[v_start + t] - ref_v, 2);
         }
         
         // Minimize the use of actuators for smoother control.
         for (t = 0; t < N-1; ++t) {
-            fg[0] += 5*CppAD::pow(vars[delta_start + t], 2);
-            fg[0] += 5*CppAD::pow(vars[a_start + t], 2);
+            fg[0] += 200*CppAD::pow(vars[delta_start + t], 2);
+            fg[0] += 100*CppAD::pow(vars[a_start + t], 2);
         }
         
         // Minimize the value gap between sequential actuations.
         // smoothness of the sterring angle
         for (t = 0; t < N-2; ++t) {
-            fg[0] += 200*CppAD::pow(vars[delta_start + t + 1] - vars[delta_start + t], 2);
-            fg[0] += 5*CppAD::pow(vars[a_start + t + 1] - vars[a_start + t], 2);
+            fg[0] += 2000*CppAD::pow(vars[delta_start + t + 1] - vars[delta_start + t], 2);
+            fg[0] += 50*CppAD::pow(vars[a_start + t + 1] - vars[a_start + t], 2);
         }
         
         // Setup Constraints
@@ -112,7 +112,7 @@ public:
             
             // Constraint value to be 0.
             //model equasions
-//            the value at previous time stamp + the rate of change 
+//            the value at previous time stamp + the rate of change
             fg[2 + x_start + t] = x1 - (x0 + v0 * CppAD::cos(psi0) * dt);
             fg[2 + y_start + t] = y1 - (y0 + v0 * CppAD::sin(psi0) * dt);
             fg[2 + psi_start + t] = psi1 - (psi0 - v0 * delta0 / Lf * dt);
@@ -185,6 +185,7 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs) {
     // Should be 0 besides initial state.
     Dvector constraints_lowerbound(n_constraints);
     Dvector constraints_upperbound(n_constraints);
+
     for (i = 0; i < n_constraints; i++) {
         constraints_lowerbound[i] = 0;
         constraints_upperbound[i] = 0;
@@ -230,14 +231,15 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs) {
     
     // solve the problem
     CppAD::ipopt::solve<Dvector, FG_eval>(
-                                          options, vars, vars_lowerbound, vars_upperbound, constraints_lowerbound,
-                                          constraints_upperbound, fg_eval, solution);
+           options, vars, vars_lowerbound, vars_upperbound, constraints_lowerbound,
+           constraints_upperbound, fg_eval, solution);
     
     // Check some of the solution values
     ok &= solution.status == CppAD::ipopt::solve_result<Dvector>::success;
     
     // Cost
     auto cost = solution.obj_value;
+    
     std::cout << "Cost " << cost << std::endl;
     
     // Return the first actuator values. The variables can be accessed with
@@ -246,7 +248,8 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs) {
     
     result.push_back(solution.x[delta_start]);
     result.push_back(solution.x[a_start]);
-    for (i = 0; i < N-1; ++i) {
+    
+    for (i = 0; i < N-1; i++) {
         result.push_back(solution.x[x_start+i+1]);
         result.push_back(solution.x[y_start+i+1]);
     }
