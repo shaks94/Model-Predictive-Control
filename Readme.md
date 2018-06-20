@@ -3,13 +3,13 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
-<img src="image/1.png" width="500" />
+<img src="./images/1.png" width="500" />
 ---
-<img src="image/2.png" width="500" />
+<img src="./images/2.png" width="500" />
 ---
-<img src="image/3.png" width="500" />
+<img src="./images/3.png" width="500" />
 ---
-<img src="image/4.png" width="500" />
+<img src="./images/4.png" width="500" />
 ---
 ## Project description
 ---
