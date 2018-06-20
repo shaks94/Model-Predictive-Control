@@ -3,7 +3,14 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
-
+<img src="image/1.png" width="500" />
+---
+<img src="image/2.png" width="500" />
+---
+<img src="image/3.png" width="500" />
+---
+<img src="image/4.png" width="500" />
+---
 ## Project description
 ---
 
@@ -46,22 +53,44 @@ ptsx_vc[i] = (ptsx[i] - px) * cos(psi) + (ptsy[i] - py) * sin(psi);
 ptsy_vc[i] = (ptsy[i] - py) * cos(psi) - (ptsx[i] - px) * sin(psi);
 }
        
-
+##### MPC Latency
+       
+Often times, in real life scenario, there will be a few milli seconds delay between the time the command is sent from model and the same got received by CAN Bus for execution, it is called as latency. This latency can affect the performance of our vehicle. For example, if the model predicted the state of the vehicle for next 0.5 seconds, if there is a latency of 0.1 second, then the vehicle would have moved and the prediction will be put to execution at 0.6th second instead of 0.5th second. By that time, the environment could have changed to some extent and model's out doesn't appear to be accurate. So, if there is a latency in the vehicle physicals, it is important to measure that latency and incorporate it in the model itself. In this project, it is indicated that the simulator is having a latency of 100 milli seconds, hence that latency is also incorporated before the actuators values are arrived and sent to vehicle. The code is in main.cpp file at line number 135.
 ```
-
 Thus the state of the car in the vehicle cordinate system is
 ```
-state << 0, 0, 0, v, cte, epsi;
+state << L_x, L_y, L_psi, L_v, L_cte, L_epsi;
           
-x , y , theta , velocity , cross track error , error psi
+//      x , y , theta , velocity , cross track error , error psi
 ```
+
 ### Selection of N & dt 
 ```
-size_t N = 10;
+size_t N = 20;
 double dt = 0.1;
 ```
-The number has be choosed in order to reduce the computation process 
+Model predits the future state of a vehicle for the next time period. ,It operates as a micro batches of predictions for a small time horizon of few seconds based on the environment & vehicle sensor inputs. In each cycle, the model is executed at regular patch of 'dt' seconds for N times . The model uses  values in iterate and produces a prediction. Having a big N or dt will make the model work faster as number of cycles to be done are lesser. Similarly, having smaller N will make the model to perform much slower.
+```
+double L_dt = 0.1; // 100 ms
+double Lf = 2.67;
+double throttle = j[1]["throttle"];
+double steering_angle = j[1]["steering_angle"];
 
+double L_x = v * L_dt;
+double L_y = 0;
+double L_psi = -(v / Lf) * steering_angle * L_dt;
+double L_v = v + throttle * L_dt;
+double L_cte = cte + v * sin(epsi) * L_dt;
+
+// Compute the expected heading based on coeffs.
+double expected_psi = atan(coeffs[1] + 
+2.0 * coeffs[2] * latency_x + 
+3.0 * coeffs[3] * latency_x*latency_x);
+
+// Compute the latent heading error.
+double L_epsi = psi - expected_psi;
+```
+---
 
 ### Reference state
 

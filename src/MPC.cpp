@@ -6,7 +6,7 @@
 using CppAD::AD;
 
 // TODO: Set the timestep length and duration
-size_t N = 10;
+size_t N = 20;
 double dt = 0.1;
 
 // This value assumes the model presented in the classroom is used.
@@ -56,7 +56,7 @@ public:
         // The part of the cost based on the reference state.
         for (t = 0; t < N; ++t) {
             fg[0] += 2000*CppAD::pow(vars[cte_start + t] - ref_cte, 2); // can be tuned better
-            fg[0] += 1500*CppAD::pow(vars[epsi_start + t] - ref_epsi, 2);
+            fg[0] += 2000*CppAD::pow(vars[epsi_start + t] - ref_epsi, 2);
             fg[0] += CppAD::pow(vars[v_start + t] - ref_v, 2);
         }
         
@@ -171,8 +171,8 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs) {
     // The upper and lower limits of delta.
     // Set to -25 and 25 degrees (values in radians).
     for (i = delta_start; i < a_start; ++i) {
-        vars_lowerbound[i] = -0.436332 * Lf;
-        vars_upperbound[i] = 0.436332 * Lf;
+        vars_lowerbound[i] = -0.5 ;
+        vars_upperbound[i] = 0.5 ;
     }
     
     // Acceleration and deceleration upper and lower limits.

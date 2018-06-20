@@ -91,27 +91,9 @@ int main() {
           double py = j[1]["y"];
           double psi = j[1]["psi"];
           double v = j[1]["speed"];
-//          vector<double> waypointsX;
-//          vector<double> waypointsY;
+          double Lf = 2.67;
 
-          /*
-          * TODO: Calculate steering angle and throttle using MPC.
-          *
-          * Both are in between [-1, 1].
-          *
-          */
-          // shifting car reference angle
-//
-//            for(int i=0; i<ptsx.size();i++){
-//                double shiftX = ptsx[i]-px;
-//                double shiftY = ptsy[i]-py;
-////                rotaion of point aobunt the origin
-////                waypointsX.push_back(shiftX * cos(0-psi) + shiftY*sin(0-psi));
-////                waypointsY.push_back(shiftX * sin(0-psi) + shiftY*cos(0-psi));
-//                ptsx[i]=(shiftX * cos(0-psi)-shiftY* sin(-psi));
-//                ptsy[i]=(shiftX * sin(0-psi)-shiftY* cos(-psi));
-//
-//            }
+
 
             Eigen::VectorXd ptsx_vc(ptsx.size());
             Eigen::VectorXd ptsy_vc(ptsx.size());
@@ -133,9 +115,31 @@ int main() {
           double steer_value = j[1]["steering_angle"];
           double throttle_value=j[1]["steering_angle"];
             
+          double latency_dt = 0.1; // 100 ms
+          double throttle = j[1]["throttle"];
+          double steering_angle = j[1]["steering_angle"];
+            
+          double latency_x = v * latency_dt;
+          double latency_y = 0;
+          double latency_psi = -(v / Lf) * steering_angle * latency_dt;
+          double latency_v = v + throttle * latency_dt;
+          double latency_cte = cte + v * sin(epsi) * latency_dt;
+            
+            // Compute the expected heading based on coeffs.
+          double expected_psi = atan(coeffs[1] +
+                                       2.0 * coeffs[2] * latency_x +
+                                       3.0 * coeffs[3] * latency_x*latency_x);
+            
+            // Compute the latent heading error.
+          double latency_epsi = psi - expected_psi;
+            
+            
+        
             Eigen::VectorXd state(6);
 //            x , y , theta , velocity , cross track error , error psi
-            state << 0, 0, 0, v, cte, epsi;
+//            state << 0, 0, 0, v, cte, epsi;
+            state << latency_x, latency_y, latency_psi, latency_v, latency_cte, latency_epsi;
+
             
             auto vars = mpc.Solve(state, coeffs);
             
@@ -163,7 +167,6 @@ int main() {
                     mpc_y_vals.push_back(vars[i]);
                 }
             }
-            double Lf = 2.67;
 
           json msgJson;
           // NOTE: Remember to divide by deg2rad(25) before you send the steering value back.
