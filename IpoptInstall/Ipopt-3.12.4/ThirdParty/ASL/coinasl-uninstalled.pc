@@ -1,9 +1,0 @@
-prefix=/usr/local
-libdir=/home/ubuntu/work/IpoptInstall/Ipopt-3.12.4/ThirdParty/ASL
-
-Name: ASL
-Description: AMPL Solver Library
-URL: https://projects.coin-or.org/BuildTools
-Version: 1.3.4
-Libs: ${libdir}/libcoinasl.la -lm -ldl 
-Cflags: -I/home/ubuntu/work/IpoptInstall/Ipopt-3.12.4/ThirdParty/ASL -I/home/ubuntu/work/IpoptInstall/Ipopt-3.12.4/ThirdParty/ASL/solvers
